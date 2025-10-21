@@ -1,9 +1,16 @@
+*{
+    font-family:'Courier New', Courier, monospace
+}
+
 nav {
-background-color: gray;
+background-color: #383E4C;
 }
 
 .headline-one {
     display: grid;
-    flex-direction:row;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; 
     background-color: green;
+    color: white;
+    padding: 20px;
 }
