@@ -1,0 +1,9 @@
+nav {
+background-color: gray;
+}
+
+.headline-one {
+    display: grid;
+    flex-direction:row;
+    background-color: green;
+}
