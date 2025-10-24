@@ -2,36 +2,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'open-sans', Courier, monospace;
 }
 
 body {
     background-color: #f5f5f5;
     color: #333;
+    
 }
 
 /* Navigation */
 nav {
     background-color: #383E4C;
-    padding: 15px 0;
-}
-
-nav ul {
-    list-style: none;
     display: flex;
     justify-content: center;
-    gap: 25px;
+    padding: 1rem;
 }
 
-nav a {
+nav>ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    gap: 1rem;
+}
+
+nav>ul a {
     color: white;
+    display: block;
+    background-color: #383E4C;
+    padding: 1rem;
+    border: solid 1px white;
+    border-radius: white;
     text-decoration: none;
-    padding: 8px 15px;
-    background-color: #4A5261;
-    border-radius: 3px;
+    transition: all ease 150ms;
 }
 
-nav a:hover {
+nav>ul a:hover {
     background-color: #606877;
 }
 
@@ -44,7 +50,7 @@ nav a:hover {
 }
 
 .hero h1 {
-    font-size: 3em;
+    font-size: 5rem;
     margin-bottom: 10px;
 }
 
@@ -65,29 +71,56 @@ nav a:hover {
 
 .headline-grid article img {
     width: 100%;
-    border-radius: 5px;
+    
+    
 }
 
 .headline-grid article {
-    padding: 20px;
-    background-color: #f8f8f8;
-    border-radius: 5px;
+    
+    background-color: #f2f2f2;
+    padding-top: 20px;
 }
+
+.headline-one h2 {
+   color: #178A27;
+    
+}
+
+.headline-two h2 {
+    color: #1686C1;
+     
+ }
+
+ .headline-three h2 {
+    color: grey;
+     
+ }
 
 button {
     margin-top: 10px;
-    border: none;
-    color: white;
+    border: 1px grey;
+    color: grey;
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 4px;
+    background:white;
 }
 
-.green { background-color: green; }
-.blue { background-color: steelblue; }
-.red { background-color: darkred; }
+.green {
+    background-color: #178A27;
+}
 
-button:hover { opacity: 0.85; }
+.blue {
+    background-color: #1686C1;
+}
+
+.red {
+    background-color: #852406;
+}
+
+button:hover {
+    opacity: 0.85;
+}
 
 /* Two-column section */
 .two-column {
@@ -100,7 +133,15 @@ button:hover { opacity: 0.85; }
 
 .two-column article img {
     width: 100%;
-    border-radius: 5px;
+    
+}
+
+.two-column-left {
+    background:#f2f2f2;
+}
+
+.two-column-right {
+    background:#f2f2f2;
 }
 
 /* Services banner */
@@ -127,14 +168,14 @@ button:hover { opacity: 0.85; }
 
 .columns-grid img {
     width: 100%;
-    border-radius: 5px;
+    
 }
 
 /* One big column */
 .one-big-column {
     text-align: center;
-    background-color: white;
-    padding: 40px 10%;
+    background-color: #f2f2f2;
+    
 }
 
 .one-big-column img {
@@ -158,6 +199,7 @@ button:hover { opacity: 0.85; }
     margin: 10px 0;
     border: none;
     border-radius: 3px;
+    background-color: #f2f2f2;
 }
 
 .contact-form button {
