@@ -1,130 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- NO USING DIVS -->
+<!-- NO USING DIVS UNLESS NECCESARY -->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout Project</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Layout Practice</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Homepage</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">External</a></li>
-            </ul>
+        <nav class="navigation">
+            <a class="active" href="#">Homepage</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="#">External</a>
         </nav>
-        <section class="hero">
-            <h1>HERO TEXT</h1>
-            <h2>Branding statement here</h2>
-        </section>
     </header>
-
-    <main>
-        <section class="headline-grid">
-            <article class="headline-one">
-                <img src="/layout-01-assets/img1.jpg" alt="Headline 1">
-                <h2>Headline</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, animi!</p>
-                <button class="green">Button Green</button>
-            </article>
-
-            <article class="headline-two">
-                <img src="/layout-01-assets/img2.jpg" alt="Headline 2">
-                <h2>Headline</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, ex.</p>
-                <button class="blue">See Details</button>
-            </article>
-
-            <article class="headline-three">
-                <img src="/layout-01-assets/img3.jpg" alt="Headline 3">
-                <h2>Headline</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, magni.</p>
-                <button class="red">Button Red</button>
-            </article>
-        </section>
-
-        <section class="two-column">
-            <article class="two-column-left">
-                <img src="/layout-01-assets/img4.jpg" alt="Two Column Left">
+    <section class="hero">
+        <h1>HERO TEXT</h1>
+        <h3>Branding statement here</h3>
+    </section>
+    <main id="content">
+        <div class="layout thirds">
+            <section class="card">
+                <img src="layout-01-assets/img1.jpg" alt="trees with colorful sky">
+                <h2 class="gh">Headline</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptate impedit expedita
+                    aliquid nobis alias numquam omnis accusantium officia, laboriosam quibusdam quae qui suscipit quam
+                    quos facere molestias, obcaecati enim. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sequi accusantium id vel, maxime possimus asperiores repellat quod consequuntur expedita? Minima
+                    blanditiis perferendis doloremque iure atque? Quam illo quia vitae quod! </p>
+                <a class="b green" href="#">Button Green</a>
+            </section>
+            <section class="card">
+                <img src="layout-01-assets/img2.jpg" alt="bridge">
+                <h2 class="bh">Headline</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptate impedit expedita
+                    aliquid nobis alias numquam omnis accusantium officia, laboriosam quibusdam quae qui suscipit quam
+                    quos facere molestias, obcaecati enim. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sequi accusantium id vel, maxime possimus asperiores repellat quod consequuntur expedita? Minima
+                    blanditiis perferendis doloremque iure atque? Quam illo quia vitae quod! </p>
+                <a class="b blue" href="#">See Details</a>
+            </section>
+            <section class="card">
+                <img src="layout-01-assets/img3.jpg" alt="railroad">
+                <h2 class="rh">Headline</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptate impedit expedita
+                    aliquid nobis alias numquam omnis accusantium officia, laboriosam quibusdam quae qui suscipit quam
+                    quos facere molestias, obcaecati enim. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sequi accusantium id vel, maxime possimus asperiores repellat quod consequuntur expedita? Minima
+                    blanditiis perferendis doloremque iure atque? Quam illo quia vitae quod! </p>
+                <a class="b red" href="#">Button Red</a>
+            </section>
+        </div>
+        <div class="layout half">
+            <section class="card">
+                <img src="layout-01-assets/img4.jpg" alt="steam from cup">
                 <h2>Two Column Left Side</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, dolore?</p>
-            </article>
-
-            <article class="two-column-right">
-                <img src="/layout-01-assets/img5.jpg" alt="Two Column Right">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptate impedit expedita
+                    aliquid nobis alias numquam omnis accusantium officia, laboriosam quibusdam quae qui suscipit quam
+                    quos facere molestias, obcaecati enim. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sequi accusantium id vel, maxime possimus asperiores repellat quod consequuntur expedita? Minima
+                    blanditiis perferendis doloremque iure atque? Quam illo quia vitae quod! </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptate impedit expedita
+                    aliquid nobis alias numquam omnis accusantium officia, laboriosam quibusdam quae qui suscipit quam
+                    quos facere molestias, obcaecati enim. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sequi accusantium id vel, maxime possimus asperiores repellat quod consequuntur expedita? Minima
+                    blanditiis perferendis doloremque iure atque? Quam illo quia vitae quod! </p>
+            </section>
+            <section class="card">
+                <img src="layout-01-assets/img5.jpg" alt="beach">
                 <h2>Two Column Right Side</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, pariatur.</p>
-                <button>Read More</button>
-            </article>
-        </section>
-
-        <section class="services-banner">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptate impedit expedita
+                    aliquid nobis alias numquam omnis accusantium officia, laboriosam quibusdam quae qui suscipit quam
+                    quos facere molestias, obcaecati enim. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sequi accusantium id vel, maxime possimus asperiores repellat quod consequuntur expedita? Minima
+                    blanditiis perferendis doloremque iure atque? Quam illo quia vitae quod! </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptate impedit expedita
+                    aliquid nobis alias numquam omnis accusantium officia, laboriosam quibusdam quae qui suscipit quam
+                    quos facere molestias, obcaecati enim. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sequi accusantium id vel, maxime possimus asperiores repellat quod consequuntur expedita? Minima
+                    blanditiis perferendis doloremque iure atque? Quam illo quia vitae quod! </p>
+                <a class="b readm" href="#">Read More</a>
+            </section>
+        </div>
+        <section class="banner">
             <h2>Our Services</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, minus.</p>
+            <p>Nunc diam leo, fringilla vuputate elit lobortis, consectetur vestibulum quam. Sed id felis ligula. In
+                euismod libero at magna dapibus, in rutrum velit lacinia. Etiam a mis quis arcu varius condimentum.</p>
         </section>
-
-        <section class="columns-grid">
-            <article class="column-one">
-                <img src="/layout-01-assets/img6.jpg" alt="Column One">
-                <h2>Column One</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </article>
-
-            <article class="column-two">
-                <img src="/layout-01-assets/img7.jpg" alt="Column Two">
+        <div class="layout quart">
+            <section class="card">
+                <img src="layout-01-assets/img6.jpg" alt="dock at lake">
+                <h2>Column 1</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptate impedit expedita
+                    aliquid nobis alias numquam omnis accusantium officia, laboriosam quibusdam quae qui suscipit quam
+                    quos facere molestias, obcaecati enim. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sequi accusantium id vel, maxime possimus asperiores repellat quod consequuntur expedita? Minima
+                    blanditiis perferendis doloremque iure atque? Quam illo quia vitae quod! </p>
+            </section>
+            <section class="card">
+                <img src="layout-01-assets/img7.jpg" alt="snowy mountains">
                 <h2>Column Two</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button>Read It</button>
-            </article>
-
-            <article class="column-three">
-                <img src="/layout-01-assets/img8.jpg" alt="Column Three">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptate impedit expedita
+                    aliquid nobis alias numquam omnis accusantium officia, laboriosam quibusdam quae qui suscipit quam
+                    quos facere molestias, obcaecati enim. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sequi accusantium id vel, maxime possimus asperiores repellat quod consequuntur expedita? Minima
+                    blanditiis perferendis doloremque iure atque? Quam illo quia vitae quod! </p>
+                <a class="b readm end" href="#">Read it</a>
+            </section>
+            <section class="card">
+                <img src="layout-01-assets/img8.jpg" alt="pink beach">
                 <h2>Column Three</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </article>
-
-            <article class="column-four">
-                <img src="/layout-01-assets/img9.jpg" alt="Column Four">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptate impedit expedita
+                    aliquid nobis alias numquam omnis accusantium officia, laboriosam quibusdam quae qui suscipit quam
+                    quos facere molestias, obcaecati enim. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sequi accusantium id vel, maxime possimus asperiores repellat quod consequuntur expedita? Minima
+                    blanditiis perferendis doloremque iure atque? Quam illo quia vitae quod! </p>
+            </section>
+            <section class="card">
+                <img src="layout-01-assets/img9.jpg" alt="yellow leaves">
                 <h2>Column Four</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button>Details</button>
-            </article>
-        </section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptate impedit expedita
+                    aliquid nobis alias numquam omnis accusantium officia, laboriosam quibusdam quae qui suscipit quam
+                    quos facere molestias, obcaecati enim. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sequi accusantium id vel, maxime possimus asperiores repellat quod consequuntur expedita? Minima
+                    blanditiis perferendis doloremque iure atque? Quam illo quia vitae quod! </p>
+                <a class="b readm end" href="#">Details</a>
+            </section>
+        </div>
+        <div class="layout big">
+            <section class="card">
+                <img src="layout-01-assets/img10.jpg" alt="lifeguard tower">
+                <h2>One Big Column</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptate impedit expedita
+                    aliquid nobis alias numquam omnis accusantium officia, laboriosam quibusdam quae qui suscipit quam
+                    quos facere molestias, obcaecati enim. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sequi accusantium id vel, maxime possimus asperiores repellat quod consequuntur expedita? Minima
+                    blanditiis perferendis doloremque iure atque? Quam illo quia vitae quod! </p>
+                <br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga aliquam facilis beatae, corporis
+                    distinctio a ipsum quibusdam nam molestias, aspernatur quia recusandae, nostrum dicta aperiam illo
+                    minima perspiciatis iure accusantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea
+                    quisquam voluptas tempore quaerat quidem impedit minus. Illum nisi sunt quo quia suscipit molestias
+                    itaque earum officiis quasi, ullam vero eum.</p>
+                <a class="b readm bbig" href="#">Read More</a>
+            </section>
+        </div>
+        <div class="layout contact">
+            <section>
+                <h2>Contact Form</h2>
+            </section>
+            <div class="contact-container">
+                <div>
 
-        <section class="one-big-column">
-            <img src="/layout-01-assets/img10.jpg" alt="One Big Column">
-            <h2>One Big Column</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, nihil.</p>
-            <button>Read More</button>
-        </section>
-
-        <section class="contact-form">
-            <h2>Contact Form</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            <form>
-                <p>Name</p>
-                <input type="text">
-                <p>Email</p>
-                <input type="email">
-                <p>Subject</p>
-                <input type="text">
-                <p>Your Message here...</p>
-                <textarea></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis voluptate impedit expedita
+                        aliquid nobis alias numquam omnis accusantium officia, laboriosam quibusdam quae qui suscipit
+                        quam quos facere molestias, obcaecati enim. Lorem ipsum dolor sit amet consectetur adipisicing
+                        elit. Sequi accusantium id vel, maxime possimus asperiores repellat quod consequuntur expedita?
+                        Minima blanditiis perferendis doloremque iure atque? Quam illo quia vitae quod!
+                    </p>
+                </div>
+                <div class="inputs">
+                    <div class="contact-info">
+                        <input placeholder="Name">
+                        <input placeholder="Email">
+                        <input placeholder="Subject">
+                    </div>
+                    <div class="contact-message">
+                        <textarea placeholder="Your Message Here..."></textarea>
+                    </div>
+                </div>
+            </div>
+            <a class="b submit" href="#">Send</a>
+        </div>
     </main>
-
-    <footer>
-        <p>Footer</p>
-        <p>Copyright 2084 Your Company Name</p>
+    <footer id="footer">
+        <h2>Footer</h2>
+        <p>Footer info</p>
+        <hr>
+        <p>Copyright @ 2084 Your Company Name</p>
+        <a href="/index.html"><img src="/layout-01-assets/img0.png"></a>
     </footer>
 </body>
 
